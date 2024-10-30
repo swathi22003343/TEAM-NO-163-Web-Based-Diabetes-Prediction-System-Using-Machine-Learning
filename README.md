@@ -1,4 +1,5 @@
-# TEAM-NO-163-Web-Based-Diabetes-Prediction-System-Using-Machine-Learning
+# TEAM.NO.163 : Web-Based Diabetes Prediction System Using Machine Learning
+
 ## About
 
 This project aims to provide an accessible tool for predicting the risk of diabetes, leveraging machine learning algorithms integrated into a web-based interface. Users can input health data, and the system returns real-time predictions about their diabetes risk. This proactive approach can help individuals make informed decisions about their health and seek medical advice if necessary.
@@ -55,17 +56,14 @@ This project aims to provide an accessible tool for predicting the risk of diabe
 ```
 python manage.py runserver
 ```
-- Access the Web Interface: Visit http://127.0.0.1:8000/ in your web browser.
+- Access the Web Interface: Visit http://127.0.0.1:5000/ in your web browser.
 
 ## Project Structure
-
-1. models/diabetes_model.pkl: Trained machine learning model for diabetes risk prediction.
-
-2. app/: Django app containing:
-   - views.py: Logic for processing user inputs and generating predictions.
-   - forms.py: Form for inputting health metrics.
-   - result.py:Form for displaying output/prediction.
-   - templates/: HTML templates for the web interface.
+- app.py: Main Python file where the Flask application is initialized. It will include routes to handle form submissions, load the model, and display results.
+- data/diabetics.csv: Folder to store the dataset used for training the model.
+- model/diabetics.pkl: Folder to store the trained model as a .pkl file for easy loading and usage within the app.
+- static/: Contains static files such as images (diabetics1.jpeg and diabetics2.jpeg), as well as CSS and JavaScript files, if needed.
+- templates/: Contains HTML templates. index.html is the main input page, and result.html shows the prediction output.
                
 ## Results
 
